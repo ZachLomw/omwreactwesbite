@@ -1,21 +1,19 @@
+html, body, #root {
+  height: 100%; /* Ensure the full height of the page is used */
+  margin: 0; /* Remove default margin */
+}
+
 .App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Use at least the full height of the viewport */
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  color: #333;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #FFFFFF;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +22,25 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-logo {
+  max-width: 150px;
+  height: auto;
+  margin-top: 40px; /* Increased top margin */
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-content, .App-coming-soon {
+  flex: 1; /* Allows these sections to expand and push the footer down */
+  margin: 20px;
+  padding: 20px;
+}
+
+.App-footer {
+  background-color: #F8C6BF;
+  color: white;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Ensure text is centered */
+  padding: 20px;
 }
