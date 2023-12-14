@@ -1,7 +1,6 @@
 html, body, #root {
   height: 100%;
   margin: 0;
-  font-family: 'Arial', sans-serif; /* Example font, replace with your desired font */
 }
 
 .App {
@@ -19,18 +18,13 @@ html, body, #root {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-content, .App-coming-soon {
   flex: 1;
   margin: 20px;
   padding: 20px;
-}
-
-.App-content h2, .App-coming-soon p {
-  font-size: 24px; /* Larger text size */
 }
 
 .App-footer {
@@ -63,12 +57,44 @@ html, body, #root {
   }
 }
 
-@keyframes dance {
-  0%, 100% { transform: translateX(0); }
-  25% { transform: translateX(-10px); }
-  75% { transform: translateX(10px); }
+.circle-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
 }
 
-.App-coming-soon p {
-  animation: dance 3s infinite;
+.circle-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 300px; /* Adjust based on your font size */
+  transform: rotate(-90deg);
+  animation: rotate 5s linear infinite;
+}
+
+.circle-text p {
+  transform-origin: center;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.coming-soon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: black; /* Adjust color as needed */
 }
