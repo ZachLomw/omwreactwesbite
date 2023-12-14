@@ -13,7 +13,7 @@ function App() {
         <h2>The Future of Logistics</h2>
       </section>
       <section className="App-coming-soon">
-        <p>Coming Soon...</p>
+        <p>Coming Soon</p>
       </section>
       <footer className="App-footer">
         <p>© Piggybackit 2024</p>
