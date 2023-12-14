@@ -22,13 +22,6 @@ html, body, #root {
   color: white;
 }
 
-.App-logo {
-  max-width: 150px;
-  height: auto;
-  margin-top: 40px; /* Increased top margin */
-  margin-bottom: 20px;
-}
-
 .App-content, .App-coming-soon {
   flex: 1; /* Allows these sections to expand and push the footer down */
   margin: 20px;
@@ -43,4 +36,24 @@ html, body, #root {
   align-items: center; /* Center vertically */
   text-align: center; /* Ensure text is centered */
   padding: 20px;
+}
+
+.App-logo {
+  max-width: 200px;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  animation: flip 10s infinite; /* 10-second duration for the entire animation cycle */
+}
+
+@keyframes flip {
+  0%, 10% {
+    transform: rotateY(0deg); /* Start and end of the flip */
+  }
+  5% {
+    transform: rotateY(180deg); /* Midpoint of the flip */
+  }
+  100% {
+    transform: rotateY(180deg); /* Ensures it stays at 180deg until the end of the cycle */
+  }
 }
