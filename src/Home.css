@@ -44,7 +44,7 @@
     margin-top: 30px; /* More spacing above buttons */
     display: flex;
     flex-direction: row;
-    justify-content: start; /* Align buttons to the start */
+    justify-content: flex-start; /* Align buttons to the start */
   }
   
   .download-button {
