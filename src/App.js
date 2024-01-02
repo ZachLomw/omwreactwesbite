@@ -1,25 +1,21 @@
 import React from 'react';
-import './App.css';
-import PiggyLogo from './Piggylogo.png'; // Importing the image
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import NavigationBar from './NavigationBar';
+import Home from './Home'; // Adjust the path as necessary
+import Contact from './Contact'; // Adjust the path as necessary
+import Footer from './Footer'; // Ensure Footer is imported
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={PiggyLogo} alt="Logo" className="App-logo" />
-      </header>
-      <section className="App-content">
-        <div className="circle-container">
-          <div className="circle-text">
-            <p></p>
-          </div>
-          <div className="coming-soon">Coming Soon</div>
-        </div>
-      </section>
-      <footer className="App-footer">
-        <p>© Piggybackit 2024</p>
-      </footer>
-    </div>
+    <Router>
+      <NavigationBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        {/* Other routes can be added here as needed */}
+      </Routes>
+      <Footer /> {/* Footer added here */}
+    </Router>
   );
 }
 

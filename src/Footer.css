@@ -1,0 +1,18 @@
+/* Footer.css */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #FFC0C6, white); /* Gradient from #FFC0C6 to white */
+    width: 100%;
+
+}
+
+.social-media-links a {
+    margin: 0 10px;
+    color: #000; /* Change color as needed */
+    font-size: 24px; /* Adjust size as needed */
+}
+
+.social-media-links a:hover {
+    color: #555; /* Change hover color as needed */
+}

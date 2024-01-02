@@ -1,0 +1,114 @@
+/* Home.css */
+.home-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start for a more dynamic layout */
+    padding: 40px 20px; /* Increased top padding for better spacing */
+    background: linear-gradient(to bottom, white, #FFC0C6);
+    min-height: 100vh;
+  }
+  
+  .home-text {
+    flex: 1;
+    padding-right: 30px; /* Added padding for spacing between text and image */
+    margin-left: 200px;
+  }
+  
+  .home-title {
+    font-size: 1.5em; /* Increased font size for title */
+    color: #333; /* Darker color for better readability */
+    margin-bottom: 30px;
+  }
+  
+  .home-content {
+    font-size: 1.1em; /* Slightly larger font size for content */
+    line-height: 1.6; /* Improved line spacing */
+    color: #555; /* Soft color for readability */
+  }
+  
+  .home-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-image img {
+    max-width: 300px; /* Adjust size as needed */
+    height: auto;
+    margin-top: 0; /* Adjust or remove margin-top as necessary */
+  }
+  
+  .download-buttons {
+    margin-top: 30px; /* More spacing above buttons */
+    display: flex;
+    flex-direction: row;
+    justify-content: start; /* Align buttons to the start */
+  }
+  
+  .download-button {
+    background-color: #FFC0C6;
+    color: black;
+    border: 2px solid #FFC0C6; /* Added border for a more defined button */
+    padding: 12px 25px; /* Increased padding for larger buttons */
+    margin-right: 15px;
+    font-size: 1em; /* Adjust font size for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  .download-button:hover {
+    background-color: white;
+    color: #333; /* Slightly darker text on hover for contrast */
+    border-color: black; /* Border color change on hover */
+  }
+  
+/* Home.css */
+/* ... existing styles ... */
+
+/* Responsive adjustments for mobile devices */
+@media screen and (max-width: 768px) {
+    .home-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .home-text {
+      text-align: center;
+      order: 1;
+      padding-right: 0;
+      margin-left: 0;
+    }
+  
+    .home-image {
+      display: none; /* Hide the image on mobile devices */
+    }
+  
+    .download-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .download-button {
+      margin-right: 0;
+      margin-bottom: 10px; /* Add space between buttons when stacked */
+    }
+  }
+  
+  /* Additional media query for very small screens */
+  @media screen and (max-width: 480px) {
+    .home-title {
+      font-size: 2em; /* Slightly smaller font size for very small screens */
+    }
+  
+    .home-content {
+      font-size: 1.2em; /* Adjust font size for content */
+    }
+  
+    .download-button {
+      padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+  }
+  
