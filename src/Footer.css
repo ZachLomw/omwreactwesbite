@@ -2,17 +2,20 @@
 .footer {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(to bottom, #FFC0C6, white); /* Gradient from #FFC0C6 to white */
-    width: 100%;
-
-}
-
-.social-media-links a {
+    background: linear-gradient(to bottom, #ffc0c6, white); /* Gradient from #FFC0C6 to white */
+    width: 100vw; /* Set width to 100% of the viewport width */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    left: 0; /* Align to the left edge */
+    right: 0; /* Align to the right edge */
+  }
+  
+  .social-media-links a {
     margin: 0 10px;
     color: #000; /* Change color as needed */
     font-size: 24px; /* Adjust size as needed */
-}
-
-.social-media-links a:hover {
+  }
+  
+  .social-media-links a:hover {
     color: #555; /* Change hover color as needed */
-}
+  }
+  
