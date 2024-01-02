@@ -10,7 +10,7 @@ function Footer() {
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faFacebook} />
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://twitter.com/Piggybackitapp" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faTwitter} />
         </a>
         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
