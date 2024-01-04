@@ -11,7 +11,7 @@ function NavigationBar() {
       </div>
       <div className="navbar-links">
         <Link to="/" className="navbar-link">Home</Link>
-        <Link to="/contact" className="navbar-link">Contact</Link>
+        <Link to="/contactform" className="navbar-link">Contact</Link>
       </div>
     </nav>
   );
