@@ -1,5 +1,7 @@
 import React from 'react';
 import './ContactForm.css'
+import './App.css'; // or the name of your global stylesheet
+
 
 function ContactForm() {
   return (

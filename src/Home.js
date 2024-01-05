@@ -4,6 +4,7 @@ import PhoneImage from "./piggyphone.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faApple, faAndroid } from '@fortawesome/free-brands-svg-icons';
 
+
 function Home() {
   return (
     <div className="home-container">

@@ -3,6 +3,8 @@ form {
     flex-direction: column;
     max-width: 500px;
     margin: auto;
+    margin-bottom: 360px;
+    
   }
   
   label {
@@ -12,6 +14,7 @@ form {
   input, textarea {
     margin-bottom: 20px;
     padding: 8px;
+    border-radius: 10px;
   }
   
   button {
@@ -20,5 +23,6 @@ form {
     background: #ffc0c6;
     border: none;
     color: white;
+    border-radius: 10px;
   }
   
