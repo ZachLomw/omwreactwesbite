@@ -7,15 +7,17 @@ function ContactForm() {
   
     const myForm = event.target;
     const formData = new FormData(myForm);
+    const action = myForm.getAttribute('action') || '/'; // Default to root if action is null
   
-    fetch(myForm.getAttribute('action'), {
+    fetch(action, {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => console.log('Form successfully submitted'))
-      .catch((error) => alert(error));
+    .then(() => console.log('Form successfully submitted'))
+    .catch((error) => alert(error));
   };
+  
   
 
   return (
