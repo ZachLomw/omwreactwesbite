@@ -7,16 +7,26 @@ function ContactForm() {
   
     const myForm = event.target;
     const formData = new FormData(myForm);
-    const action = myForm.getAttribute('action') || '/'; // Default to root if action is null
   
-    fetch(action, {
+    fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams(formData).toString(),
     })
-    .then(() => console.log('Form successfully submitted'))
-    .catch((error) => alert(error));
+    .then(response => {
+      if (response.ok) {
+        console.log('Form successfully submitted');
+        // Handle successful form submission (e.g., display thank you message)
+      } else {
+        throw new Error('Form submission failed');
+      }
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+      // Handle form submission error (e.g., display error message)
+    });
   };
+  
   
   
 
