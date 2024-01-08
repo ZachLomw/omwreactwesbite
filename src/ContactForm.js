@@ -5,7 +5,7 @@ import './ContactForm.css'
 function ContactForm() {
   const [state, handleSubmit] = useForm("xbjnjppo");
   if (state.succeeded) {
-      return <p className="form-success-message">Thanks for joining!</p>;
+      return <p className="form-success-message">!</p>;
   }
   return (
     <form onSubmit={handleSubmit} className="contact-form">
