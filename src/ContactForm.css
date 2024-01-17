@@ -35,7 +35,7 @@
 .submit-button {
   width: 100%;
   padding: 10px;
-  background-color: #ffc0c6; /* Adjust to match your theme */
+  background-color: #8686FF; /* Adjust to match your theme */
   color: white;
   border: none;
   border-radius: 4px;
@@ -45,10 +45,10 @@
 }
 
 .submit-button:hover {
-  background-color: #e5566d;
+  background-color: #9898ef;
 }
 
 .form-success-message {
   text-align: center;
-  color: green;
+  color: #8686FF;
 }

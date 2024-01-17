@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './NavigationBar.css'; // Ensure the path to your CSS file is correct
-import LogoImage from './Piggylogo.png'; // Adjust the path to your image file as necessary
+import LogoImage from './omwlogo.png'; // Adjust the path to your image file as necessary
 
 function NavigationBar() {
   return (

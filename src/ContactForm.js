@@ -1,11 +1,11 @@
-import React from 'react';
-import { useForm, ValidationError } from '@formspree/react';
-import './ContactForm.css'
+import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
+import "./ContactForm.css";
 
 function ContactForm() {
-  const [state, handleSubmit] = useForm("xbjnjppo");
+  const [state, handleSubmit] = useForm(process.env.FORMSPREE_FORM_ID);
   if (state.succeeded) {
-      return <p className="form-success-message">!</p>;
+    return <p className="form-success-message">Thank you for contacting On My Way</p>;
   }
   return (
     <form onSubmit={handleSubmit} className="contact-form">
@@ -18,10 +18,18 @@ function ContactForm() {
       <div className="form-field">
         <label htmlFor="message">Message</label>
         <textarea id="message" name="message" />
-        <ValidationError prefix="Message" field="message" errors={state.errors} />
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
+        />
       </div>
 
-      <button type="submit" disabled={state.submitting} className="submit-button">
+      <button
+        type="submit"
+        disabled={state.submitting}
+        className="submit-button"
+      >
         Submit
       </button>
     </form>

@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: flex-start;
   padding: 20px 20px;
-  background: linear-gradient(to bottom, white, #ffc0c6);
+  background: linear-gradient(to bottom, white, #8686FF);
   min-height: 100vh;
   font-family: 'Poppins', sans-serif; /* Modern font family */
 }
@@ -50,7 +50,7 @@
 }
 
 .download-button {
-  background-color: #ffc0c6;
+  background-color: #8686FF;
   color: white;
   border: none;
   padding: 15px 30px;
@@ -73,7 +73,7 @@
 
 .download-button:hover {
   background-color: black;
-  color: #ffc0c6;
+  color: #8686FF;
 }
 
 /* Responsive adjustments for mobile devices */
