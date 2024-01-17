@@ -5,7 +5,7 @@ import "./ContactForm.css";
 function ContactForm() {
   const [state, handleSubmit] = useForm(process.env.FORMSPREE_FORM_ID);
   if (state.succeeded) {
-    return <p className="form-success-message">Thank you for contacting On My Way</p>;
+    return <p className="form-success-message">Thank you for contacting On My Way!</p>;
   }
   return (
     <form onSubmit={handleSubmit} className="contact-form">
