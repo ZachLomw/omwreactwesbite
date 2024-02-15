@@ -11,7 +11,7 @@ function Home() {
       <div className="home-text">
         <h1 className="home-title">Welcome to On My Way</h1>
         <p className="home-content">
-          On My Way is a convenient app that connects individuals who are
+          Piggybackit is a convenient app that connects individuals who are
           traveling with those in need of package delivery services. Whether
           you're heading to work, running errands, or going on a trip, you can
           earn extra money by picking up and dropping off packages along your
