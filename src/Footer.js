@@ -33,7 +33,7 @@ function Footer() {
           <FontAwesomeIcon icon={faInstagram} />
         </a>
       </div>
-      <div className="copyright">© All Rights Reserved It's On My Way LLC 2024</div>
+      <div className="copyright">© All Rights Reserved It's On My Way 2024</div>
     </footer>
   );
 }

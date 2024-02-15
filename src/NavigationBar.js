@@ -11,7 +11,8 @@ function NavigationBar() {
       </div>
       <div className="navbar-links">
         <Link to="/" className="navbar-link">Home</Link>
-        <Link className="navbar-link" to={"/contact"}>Contact</Link>
+        <Link className="navbar-link" to={"/contactform"}>Contact</Link>
+
       </div>
     </nav>
   );
