@@ -5,7 +5,7 @@ function StripeFinished() {
   return (
     <div className="stripe-finished-container">
       <h1>Thank You!</h1>
-      <p>Thank you for submitting your information. We will get back to you as soon as possible.</p>
+      <p>Thank you for completing the Stripe onbaording process! We will get back to you shortly reguarding your driver approval.</p>
     </div>
   );
 }
