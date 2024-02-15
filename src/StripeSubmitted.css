@@ -7,7 +7,7 @@
     height: 100vh; /* Use full height to center vertically */
     text-align: center;
     padding: 20px;
-    background-color: #f0f4f8; /* Light grey background */
+    background-image: linear-gradient(white, #8686FF); /* Gradient background from white to #8686FF */
     color: #333; /* Dark text color */
   }
   
@@ -20,5 +20,22 @@
     font-size: 18px;
     line-height: 1.6;
     max-width: 600px; /* Ensure the text is not too wide */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .stripe-finished-container {
+      padding: 10px;
+      height: auto; /* Adjust height for smaller screens */
+    }
+  
+    .stripe-finished-container h1 {
+      font-size: 24px; /* Smaller font size for h1 on smaller screens */
+    }
+  
+    .stripe-finished-container p {
+      font-size: 16px; /* Adjust paragraph font size for readability on smaller screens */
+      padding: 0 20px; /* Add padding to ensure text doesn't touch the edges */
+    }
   }
   
