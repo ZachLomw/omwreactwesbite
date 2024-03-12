@@ -5,6 +5,7 @@ import Home from './Home';
 import Footer from './Footer';
 import ContactForm from './ContactForm';
 import StripeFinished from './StripeSubmitted';
+import PrivacyPolicy from './privacypolicy';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contactform" element={<ContactForm />} />
-        <Route path="/stripefinished" element={<StripeFinished />} /> {/* Fixed this line */}
+        <Route path="/stripefinished" element={<StripeFinished />} /> 
+        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
     </Router>
